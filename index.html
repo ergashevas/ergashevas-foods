@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERGASHEVAS FOODS | Premium Fast Food in Andijan</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./food.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-burger"></i>
+                <span>ERGASHEVAS</span> <strong>FOODS</strong>
+            </a>
+            
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#kfc-chicken">KFC Style</a></li>
+                    <li><a href="#drinks">Drinks</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search delicious food...">
+                    <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <button class="cart-icon-btn" id="cartToggleBtn" aria-label="Shopping Cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="hero-badge"><i class="fa-solid fa-fire"></i> Welcome to Andijan's Finest</span>
+            <h1>TASTE THE <span class="highlight">HAPPINESS</span></h1>
+            <h2>ERGASHEVAS FOODS</h2>
+            <p>Experience the ultimate luxury fast-food sensation. Crafted with premium ingredients, sizzling perfection, and unforgettable flavor delivered right to your doorstep in Andijan.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Order Now <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#categories" class="btn btn-outline">Explore Menu</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h3>15+</h3>
+                    <p>Signature Burgers</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Halal & Fresh</p>
+                </div>
+                <div class="stat-item">
+                    <h3>20 Min</h3>
+                    <p>Fast Delivery</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <div class="hero-glow"></div>
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80" alt="Gourmet Burger Deluxe" class="hero-img floating">
+        </div>
+    </section>
+
+    <!-- Food Carousel Section -->
+    <section class="carousel-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Masterpieces</h2>
+                <p>Handpicked customer favorites you simply cannot miss</p>
+            </div>
+            
+            <div class="food-carousel" id="foodCarousel">
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <!-- Slide 1 -->
+                        <li class="carousel-slide current-slide">
+                            <div class="slide-content">
+                                <h3>Crispy Chicken Bucket</h3>
+                                <p>Golden-brown, extra crunchy chicken pieces seasoned with secret herbs and spices.</p>
+                                <div class="slide-price">65,000 UZS</div>
+                                <button class="btn btn-primary add-to-cart-carousel" data-name="Crispy Chicken Bucket" data-price="65000" data-img="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=600&q=80">Order Now</button>
+                            </div>
+                            <div class="slide-image">
+                                <img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=600&q=80" alt="Crispy Chicken Bucket">
+                            </div>
+                        </li>
+                        <!-- Slide 2 -->
+                        <li class="carousel-slide">
+                            <div class="slide-content">
+                                <h3>Double Cheeseburger</h3>
+                                <p>Two smashed beef patties, double cheddar cheese, caramelized onions, and signature sauce.</p>
+                                <div class="slide-price">48,000 UZS</div>
+                                <button class="btn btn-primary add-to-cart-carousel" data-name="Double Cheeseburger" data-price="48000" data-img="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80">Order Now</button>
+                            </div>
+                            <div class="slide-image">
+                                <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80" alt="Double Cheeseburger">
+                            </div>
+                        </li>
+                        <!-- Slide 3 -->
+                        <li class="carousel-slide">
+                            <div class="slide-content">
+                                <h3>Special Chicken Bucket</h3>
+                                <p>Ultimate assortment of spicy wings, tenders, drumsticks, and garlic dipping sauce.</p>
+                                <div class="slide-price">85,000 UZS</div>
+                                <button class="btn btn-primary add-to-cart-carousel" data-name="Special Chicken Bucket" data-price="85000" data-img="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=600&q=80">Order Now</button>
+                            </div>
+                            <div class="slide-image">
+                                <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=600&q=80" alt="Special Chicken Bucket">
+                            </div>
+                        </li>
+                        <!-- Slide 4 -->
+                        <li class="carousel-slide">
+                            <div class="slide-content">
+                                <h3>French Fries Combo</h3>
+                                <p>Golden crispy fries paired with loaded cheese sauce, bacon bits, and a refreshing drink.</p>
+                                <div class="slide-price">32,000 UZS</div>
+                                <button class="btn btn-primary add-to-cart-carousel" data-name="French Fries Combo" data-price="32000" data-img="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80">Order Now</button>
+                            </div>
+                            <div class="slide-image">
+                                <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80" alt="French Fries Combo">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Carousel Navigation Buttons -->
+                <button class="carousel-btn carousel-btn-left" id="prevSlide"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="carousel-btn carousel-btn-right" id="nextSlide"><i class="fa-solid fa-chevron-right"></i></button>
+                <!-- Carousel Pagination Dots -->
+                <div class="carousel-nav" id="carouselNav">
+                    <button class="carousel-indicator current-slide" data-target="0"></button>
+                    <button class="carousel-indicator" data-target="1"></button>
+                    <button class="carousel-indicator" data-target="2"></button>
+                    <button class="carousel-indicator" data-target="3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="offers-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Special Combos & Offers</h2>
+                <p>Save big while enjoying maximum flavor</p>
+            </div>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <span class="discount-badge">Save 20%</span>
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=500&q=80" alt="Today's Special">
+                    <div class="offer-info">
+                        <h3>Today's Special</h3>
+                        <p>Royal Truffle Burger + Medium Fries + Coca-Cola</p>
+                        <div class="price-wrap">
+                            <span class="old-price">55,000 UZS</span>
+                            <span class="new-price">44,000 UZS</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" data-name="Today's Special Combo" data-price="44000" data-img="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=500&q=80">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <span class="discount-badge">Family Pack</span>
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=500&q=80" alt="Family Combo">
+                    <div class="offer-info">
+                        <h3>Family Combo</h3>
+                        <p>2 Large Pizzas + 4 Burgers + 1.5L Drink + 2 Large Fries</p>
+                        <div class="price-wrap">
+                            <span class="old-price">180,000 UZS</span>
+                            <span class="new-price">145,000 UZS</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" data-name="Family Combo" data-price="145000" data-img="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=500&q=80">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <span class="discount-badge">Popular</span>
+                    <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=500&q=80" alt="Burger + Drink Combo">
+                    <div class="offer-info">
+                        <h3>Burger + Drink Combo</h3>
+                        <p>Classic Cheeseburger + Chilled Fresh Lemonade</p>
+                        <div class="price-wrap">
+                            <span class="old-price">40,000 UZS</span>
+                            <span class="new-price">30,000 UZS</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" data-name="Burger + Drink Combo" data-price="30000" data-img="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=500&q=80">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Categories Section -->
+    <section class="categories-section" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore Categories</h2>
+                <p>Tap a category to filter our exquisite menu items</p>
+            </div>
+            <div class="category-grid" id="categoryGrid">
+                <div class="cat-card active" data-category="all">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=300&q=80" alt="All Foods">
+                    <span>All Foods</span>
+                </div>
+                <div class="cat-card" data-category="Burgers">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=300&q=80" alt="Burgers">
+                    <span>Burgers</span>
+                </div>
+                <div class="cat-card" data-category="Crispy Chicken">
+                    <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=300&q=80" alt="Crispy Chicken">
+                    <span>Crispy Chicken</span>
+                </div>
+                <div class="cat-card" data-category="KFC Style">
+                    <img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=300&q=80" alt="KFC Style">
+                    <span>KFC Style</span>
+                </div>
+                <div class="cat-card" data-category="Pizza">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=300&q=80" alt="Pizza">
+                    <span>Pizza</span>
+                </div>
+                <div class="cat-card" data-category="Hot Dogs">
+                    <img src="https://images.unsplash.com/photo-1619740455993-9e612b1af08a?auto=format&fit=crop&w=300&q=80" alt="Hot Dogs">
+                    <span>Hot Dogs</span>
+                </div>
+                <div class="cat-card" data-category="Sandwiches">
+                    <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=300&q=80" alt="Sandwiches">
+                    <span>Sandwiches</span>
+                </div>
+                <div class="cat-card" data-category="French Fries">
+                    <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=300&q=80" alt="French Fries">
+                    <span>French Fries</span>
+                </div>
+                <div class="cat-card" data-category="Snacks">
+                    <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=300&q=80" alt="Snacks">
+                    <span>Snacks</span>
+                </div>
+                <div class="cat-card" data-category="Desserts">
+                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=300&q=80" alt="Desserts">
+                    <span>Desserts</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KFC-Style Chicken Section -->
+    <section class="kfc-section" id="kfc-chicken">
+        <div class="container">
+            <div class="section-header">
+                <h2>KFC-Style Chicken Flavors</h2>
+                <p>Crispy on the outside, incredibly juicy and tender on the inside</p>
+            </div>
+            <div class="kfc-grid" id="kfcGrid">
+                <!-- Dynamically populated or static card elements -->
+                <div class="food-card" data-category="KFC Style">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=500&q=80" alt="Spicy Chicken">
+                        <span class="category-tag">KFC Style</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Spicy Chicken</h3>
+                        <p>Fiery hot marinade with a crunchy, perfectly seasoned golden breading crust.</p>
+                        <div class="card-footer">
+                            <span class="price">35,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Spicy Chicken" data-price="35000" data-img="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-card" data-category="KFC Style">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=500&q=80" alt="Sweet Chicken">
+                        <span class="category-tag">KFC Style</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Sweet Chicken</h3>
+                        <p>Glazed in our signature honey-chili glaze offering sweet and savory notes.</p>
+                        <div class="card-footer">
+                            <span class="price">36,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Sweet Chicken" data-price="36000" data-img="https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-card" data-category="KFC Style">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=500&q=80" alt="Classic Crispy Chicken">
+                        <span class="category-tag">KFC Style</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Classic Crispy Chicken</h3>
+                        <p>The timeless favorite with 11 secret herbs and spices. Ultra juicy.</p>
+                        <div class="card-footer">
+                            <span class="price">34,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Classic Crispy Chicken" data-price="34000" data-img="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-card" data-category="KFC Style">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=500&q=80" alt="Garlic Chicken">
+                        <span class="category-tag">KFC Style</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Garlic Chicken</h3>
+                        <p>Infused with aromatic roasted garlic butter and herbs for intense flavor.</p>
+                        <div class="card-footer">
+                            <span class="price">37,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Garlic Chicken" data-price="37000" data-img="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-card" data-category="KFC Style">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=500&q=80" alt="BBQ Chicken">
+                        <span class="category-tag">KFC Style</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>BBQ Chicken</h3>
+                        <p>Drenched in smoky hickory barbecue sauce with a delectable crunch.</p>
+                        <div class="card-footer">
+                            <span class="price">36,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="BBQ Chicken" data-price="36000" data-img="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-card" data-category="KFC Style">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=500&q=80" alt="Extra Crispy Chicken">
+                        <span class="category-tag">KFC Style</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Extra Crispy Chicken</h3>
+                        <p>Double breaded for maximum crunch, texture, and deep savory flavor.</p>
+                        <div class="card-footer">
+                            <span class="price">38,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Extra Crispy Chicken" data-price="38000" data-img="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complete Food Menu Section (20+ Products) -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Complete Menu</h2>
+                <p>Explore over 20 culinary masterpieces prepared fresh upon order</p>
+            </div>
+            
+            <div class="food-grid" id="completeMenuGrid">
+                <!-- Product 1 -->
+                <div class="food-card" data-category="Burgers">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80" alt="Ergashevas Royal Burger">
+                        <span class="category-tag">Burgers</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Ergashevas Royal Burger</h3>
+                        <p>Juicy beef patty, truffle mayo, crispy onions, fresh lettuce, and melted gouda.</p>
+                        <div class="card-footer">
+                            <span class="price">45,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Ergashevas Royal Burger" data-price="45000" data-img="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="food-card" data-category="Burgers">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=500&q=80" alt="Double Cheeseburger">
+                        <span class="category-tag">Burgers</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Double Cheeseburger</h3>
+                        <p>Double smashed beef, double cheddar, pickles, onions, and special house sauce.</p>
+                        <div class="card-footer">
+                            <span class="price">48,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Double Cheeseburger" data-price="48000" data-img="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="food-card" data-category="Burgers">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=500&q=80" alt="Spicy Jalapeno Burger">
+                        <span class="category-tag">Burgers</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Spicy Jalapeno Burger</h3>
+                        <p>Beef patty, fresh sliced jalapenos, pepper jack cheese, and fiery chipotle mayo.</p>
+                        <div class="card-footer">
+                            <span class="price">42,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Spicy Jalapeno Burger" data-price="42000" data-img="https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="food-card" data-category="Crispy Chicken">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=500&q=80" alt="Crispy Chicken Burger">
+                        <span class="category-tag">Crispy Chicken</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Crispy Chicken Burger</h3>
+                        <p>Thick chicken breast fillet in crunchy batter, coleslaw, and honey mustard.</p>
+                        <div class="card-footer">
+                            <span class="price">39,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Crispy Chicken Burger" data-price="39000" data-img="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="food-card" data-category="Crispy Chicken">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=500&q=80" alt="Crispy Chicken Bucket">
+                        <span class="category-tag">Crispy Chicken</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Crispy Chicken Bucket</h3>
+                        <p>Assorted golden crispy chicken pieces served with garlic and ketchup dips.</p>
+                        <div class="card-footer">
+                            <span class="price">65,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Crispy Chicken Bucket" data-price="65000" data-img="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="food-card" data-category="Pizza">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=500&q=80" alt="Pepperoni Supreme Pizza">
+                        <span class="category-tag">Pizza</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Pepperoni Supreme Pizza</h3>
+                        <p>Loaded with spicy pepperoni, mozzarella cheese, and Italian herbs on thin crust.</p>
+                        <div class="card-footer">
+                            <span class="price">75,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Pepperoni Supreme Pizza" data-price="75000" data-img="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="food-card" data-category="Pizza">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=500&q=80" alt="Margherita Classica Pizza">
+                        <span class="category-tag">Pizza</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Margherita Classica Pizza</h3>
+                        <p>Fresh tomatoes, rich mozzarella cheese, basil leaves, and extra virgin olive oil.</p>
+                        <div class="card-footer">
+                            <span class="price">60,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Margherita Classica Pizza" data-price="60000" data-img="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="food-card" data-category="Hot Dogs">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1619740455993-9e612b1af08a?auto=format&fit=crop&w=500&q=80" alt="New York Style Hot Dog">
+                        <span class="category-tag">Hot Dogs</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>New York Style Hot Dog</h3>
+                        <p>Juicy jumbo beef frankfurter, sauerkraut, mustard, and caramelized onions.</p>
+                        <div class="card-footer">
+                            <span class="price">25,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="New York Style Hot Dog" data-price="25000" data-img="https://images.unsplash.com/photo-1619740455993-9e612b1af08a?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="food-card" data-category="Hot Dogs">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1627834377410-f4b63e90e4f0?auto=format&fit=crop&w=500&q=80" alt="Loaded Cheese Hot Dog">
+                        <span class="category-tag">Hot Dogs</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Loaded Cheese Hot Dog</h3>
+                        <p>Frankfurter smothered in warm liquid cheddar cheese and crispy bits.</p>
+                        <div class="card-footer">
+                            <span class="price">28,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Loaded Cheese Hot Dog" data-price="28000" data-img="https://images.unsplash.com/photo-1627834377410-f4b63e90e4f0?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="food-card" data-category="Sandwiches">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=500&q=80" alt="Club Sandwich Deluxe">
+                        <span class="category-tag">Sandwiches</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Club Sandwich Deluxe</h3>
+                        <p>Grilled chicken breast, crispy turkey bacon, tomato, lettuce, and mayo in toasted bread.</p>
+                        <div class="card-footer">
+                            <span class="price">38,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Club Sandwich Deluxe" data-price="38000" data-img="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="food-card" data-category="French Fries">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=500&q=80" alt="Golden French Fries">
+                        <span class="category-tag">French Fries</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Golden French Fries</h3>
+                        <p>Crispy potato sticks lightly salted and served with your choice of dip.</p>
+                        <div class="card-footer">
+                            <span class="price">18,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Golden French Fries" data-price="18000" data-img="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="food-card" data-category="French Fries">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=500&q=80" alt="Loaded Cheese Fries">
+                        <span class="category-tag">French Fries</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Loaded Cheese Fries</h3>
+                        <p>Crispy fries drenched in hot melted cheese and jalapenos.</p>
+                        <div class="card-footer">
+                            <span class="price">24,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Loaded Cheese Fries" data-price="24000" data-img="https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 13 -->
+                <div class="food-card" data-category="Snacks">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=500&q=80" alt="Crispy Chicken Nuggets (6 pcs)">
+                        <span class="category-tag">Snacks</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Crispy Chicken Nuggets (6 pcs)</h3>
+                        <p>Tender chicken pieces coated in seasoned breadcrumbs, fried to perfection.</p>
+                        <div class="card-footer">
+                            <span class="price">22,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Crispy Chicken Nuggets (6 pcs)" data-price="22000" data-img="https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 14 -->
+                <div class="food-card" data-category="Snacks">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?auto=format&fit=crop&w=500&q=80" alt="Spicy Chicken Wings (6 pcs)">
+                        <span class="category-tag">Snacks</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Spicy Chicken Wings (6 pcs)</h3>
+                        <p>Crispy wings tossed in fiery buffalo sauce with a side of ranch.</p>
+                        <div class="card-footer">
+                            <span class="price">32,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Spicy Chicken Wings (6 pcs)" data-price="32000" data-img="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 15 -->
+                <div class="food-card" data-category="Snacks">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=500&q=80" alt="Mozzarella Sticks (5 pcs)">
+                        <span class="category-tag">Snacks</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Mozzarella Sticks (5 pcs)</h3>
+                        <p>Golden fried breaded mozzarella with stretchy gooey cheese inside. Marinara dip.</p>
+                        <div class="card-footer">
+                            <span class="price">26,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Mozzarella Sticks (5 pcs)" data-price="26000" data-img="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 16 -->
+                <div class="food-card" data-category="Desserts">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=500&q=80" alt="Chocolate Lava Cake">
+                        <span class="category-tag">Desserts</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Chocolate Lava Cake</h3>
+                        <p>Warm chocolate cake with a molten liquid chocolate center. Served with ice cream.</p>
+                        <div class="card-footer">
+                            <span class="price">25,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Chocolate Lava Cake" data-price="25000" data-img="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 17 -->
+                <div class="food-card" data-category="Desserts">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=500&q=80" alt="Classic Strawberry Sundae">
+                        <span class="category-tag">Desserts</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Classic Strawberry Sundae</h3>
+                        <p>Creamy vanilla soft-serve ice cream topped with sweet strawberry syrup.</p>
+                        <div class="card-footer">
+                            <span class="price">18,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Classic Strawberry Sundae" data-price="18000" data-img="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 18 -->
+                <div class="food-card" data-category="Burgers">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=500&q=80" alt="BBQ Bacon Burger">
+                        <span class="category-tag">Burgers</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>BBQ Bacon Burger</h3>
+                        <p>Beef patty, smoky beef bacon, cheddar cheese, onion rings, and BBQ sauce.</p>
+                        <div class="card-footer">
+                            <span class="price">46,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="BBQ Bacon Burger" data-price="46000" data-img="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 19 -->
+                <div class="food-card" data-category="Pizza">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=500&q=80" alt="BBQ Chicken Pizza">
+                        <span class="category-tag">Pizza</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>BBQ Chicken Pizza</h3>
+                        <p>Grilled chicken pieces, red onions, mozzarella, cilantro, and tangy BBQ drizzle.</p>
+                        <div class="card-footer">
+                            <span class="price">72,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="BBQ Chicken Pizza" data-price="72000" data-img="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 20 -->
+                <div class="food-card" data-category="Sandwiches">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=500&q=80" alt="Crispy Chicken Wrap">
+                        <span class="category-tag">Sandwiches</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Crispy Chicken Wrap</h3>
+                        <p>Crispy chicken tenders, lettuce, tomatoes, and garlic sauce wrapped in a soft tortilla.</p>
+                        <div class="card-footer">
+                            <span class="price">32,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Crispy Chicken Wrap" data-price="32000" data-img="https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drinks Section -->
+    <section class="drinks-section" id="drinks">
+        <div class="container">
+            <div class="section-header">
+                <h2>Refreshing Drinks & Shakes</h2>
+                <p>Ice-cold beverages and creamy milkshakes to complement your meal</p>
+            </div>
+            
+            <div class="drinks-grid" id="drinksGrid">
+                <div class="food-card" data-category="Drinks">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=500&q=80" alt="Coca-Cola">
+                        <span class="category-tag">Drink</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Coca-Cola</h3>
+                        <p>Chilled classic carbonated soft drink. 0.5L bottle.</p>
+                        <div class="card-footer">
+                            <span class="price">10,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Coca-Cola" data-price="10000" data-img="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card" data-category="Drinks">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?auto=format&fit=crop&w=500&q=80" alt="Pepsi">
+                        <span class="category-tag">Drink</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Pepsi</h3>
+                        <p>Refreshing bold cola taste. 0.5L bottle.</p>
+                        <div class="card-footer">
+                            <span class="price">10,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Pepsi" data-price="10000" data-img="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card" data-category="Drinks">
+                    <div class="card-img-wrap">
+                        <img src="./fanta.jpg" alt="Fanta">
+                        <span class="category-tag">Drink</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Fanta</h3>
+                        <p>Bubbly orange flavored citrus soda. 0.5L.</p>
+                        <div class="card-footer">
+                            <span class="price">10,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Fanta" data-price="10000" data-img="https://images.unsplash.com/photo-1624552184280-9e9631bbeee9?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card" data-category="Drinks">
+                    <div class="card-img-wrap">
+                        <img src="./sprite.jpg" alt="Sprite">
+                        <span class="category-tag">Drink</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Sprite</h3>
+                        <p>Crisp lemon-lime refreshing taste. 0.5L.</p>
+                        <div class="card-footer">
+                            <span class="price">10,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Sprite" data-price="10000" data-img="https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card" data-category="Drinks">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=500&q=80" alt="Ice Tea">
+                        <span class="category-tag">Drink</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Ice Tea</h3>
+                        <p>Refreshing brewed peach ice tea with ice cubes and lemon slice.</p>
+                        <div class="card-footer">
+                            <span class="price">14,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Ice Tea" data-price="14000" data-img="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card" data-category="Drinks">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80" alt="Lemonade">
+                        <span class="category-tag">Drink</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Lemonade</h3>
+                        <p>Freshly squeezed lemons, mint leaves, cane sugar, and sparkling water.</p>
+                        <div class="card-footer">
+                            <span class="price">16,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Lemonade" data-price="16000" data-img="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card" data-category="Drinks">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=500&q=80" alt="Orange Juice">
+                        <span class="category-tag">Drink</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Orange Juice</h3>
+                        <p>100% freshly squeezed natural vitamin-rich orange juice.</p>
+                        <div class="card-footer">
+                            <span class="price">18,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Orange Juice" data-price="18000" data-img="https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card" data-category="Drinks">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=500&q=80" alt="Strawberry Milkshake">
+                        <span class="category-tag">Drink</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Strawberry Milkshake</h3>
+                        <p>Thick creamy vanilla ice cream blended with fresh strawberries and whipped cream.</p>
+                        <div class="card-footer">
+                            <span class="price">22,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Strawberry Milkshake" data-price="22000" data-img="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card" data-category="Drinks">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=500&q=80" alt="Chocolate Milkshake">
+                        <span class="category-tag">Drink</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Chocolate Milkshake</h3>
+                        <p>Rich Belgian chocolate syrup blended with ice cream and topped with cocoa powder.</p>
+                        <div class="card-footer">
+                            <span class="price">22,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Chocolate Milkshake" data-price="22000" data-img="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card" data-category="Drinks">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=500&q=80" alt="Mineral Water">
+                        <span class="category-tag">Drink</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Mineral Water</h3>
+                        <p>Pure pristine bottled mineral water (Still or Sparkling). 0.5L.</p>
+                        <div class="card-footer">
+                            <span class="price">7,000 UZS</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Mineral Water" data-price="7000" data-img="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=500&q=80"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=700&q=80" alt="Ergashevas Foods Restaurant Interior">
+                <div class="experience-badge">
+                    <h4>Premium</h4>
+                    <p>Fast Food Brand</p>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="section-subtitle">About ERGASHEVAS FOODS</span>
+                <h2>Redefining Fast Food Excellence in Andijan</h2>
+                <p>Founded with passion and a commitment to absolute quality, <strong>ERGASHEVAS FOODS</strong> brings a luxury international fast-food dining experience right to the heart of Andijan, Uzbekistan.</p>
+                
+                <div class="about-features">
+                    <div class="feature-box">
+                        <i class="fa-solid fa-seedling"></i>
+                        <div>
+                            <h4>Quality Ingredients</h4>
+                            <p>We source 100% fresh, halal meat, farm-fresh local vegetables, and artisanal buns daily.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <i class="fa-solid fa-fire-burner"></i>
+                        <div>
+                            <h4>Freshly Prepared</h4>
+                            <p>Every single burger, crispy chicken bucket, and pizza is cooked to order ensuring piping hot perfection.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <i class="fa-solid fa-face-smile-beam"></i>
+                        <div>
+                            <h4>Customer Satisfaction</h4>
+                            <p>Your happiness is our ultimate mission. Fast delivery, immaculate hygiene, and friendly service.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Loved by thousands of food enthusiasts across Andijan</p>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"The Royal Burger at Ergashevas Foods is simply out of this world! Incredible juicy patties and lightning-fast delivery in Andijan."</p>
+                    <div class="reviewer-info">
+                        <h4>Bekzod Rakhimov</h4>
+                        <span>Verified Customer</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"Their KFC-style crispy chicken rivals international chains! So crunchy on the outside and tender inside. My kids' favorite place!"</p>
+                    <div class="reviewer-info">
+                        <h4>Malika Karimova</h4>
+                        <span>Verified Customer</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"Amazing luxury ambiance and spotless cleanliness. The strawberry milkshake and pepperoni pizza combo is my absolute go-to!"</p>
+                    <div class="reviewer-info">
+                        <h4>Javohir Turgunov</h4>
+                        <span>Verified Customer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>We would love to hear from you or take your order</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info-card">
+                    <h3>Contact Information</h3>
+                    <p>Visit our restaurant or reach out through our official channels.</p>
+                    
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <p>Andijan shaxar, milliy tiklanish ko'chasi, 21-uy, 2 qavat, Ergashevas Foods</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <strong>Phone Number</strong>
+                                <p>+998 90 572 17 01</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <strong>Working Hours</strong>
+                                <p>dushanbadan-shanbagacha 09:00-23:00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <div>
+                                <strong>Social Media</strong>
+                                <div class="social-links">
+                                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i> Instagram Placeholder</a>
+                                    <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i> Telegram Placeholder</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact-form-card">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName">Your Name</label>
+                            <input type="text" id="contactName" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" placeholder="+998 90 572 17 01" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Your Message / Order Note</label>
+                            <textarea id="contactMessage" rows="4" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        <div id="formSuccessMsg" class="form-success hidden">Thank you! Your message has been sent successfully.</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Slide-out Drawer -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3><i class="fa-solid fa-bag-shopping"></i> Your Shopping Cart</h3>
+            <button class="close-cart-btn" id="closeCartBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-body" id="cartBody">
+            <!-- Cart items injected dynamically via JS -->
+            <div class="empty-cart" id="emptyCartMsg">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Your cart is currently empty.</p>
+                <a href="#menu" class="btn btn-primary" id="startShoppingBtn">Start Shopping</a>
+            </div>
+        </div>
+        <div class="cart-footer" id="cartFooter">
+            <div class="cart-total-row">
+                <span>Total Amount:</span>
+                <strong id="cartTotalPrice">0 UZS</strong>
+            </div>
+            <button class="btn btn-primary w-100" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-burger"></i>
+                    <span>ERGASHEVAS</span> <strong>FOODS</strong>
+                </a>
+                <p>The epitome of gourmet fast food in Andijan, Uzbekistan. Premium quality, unforgettable taste, and lightning-fast delivery.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Complete Menu</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Food Categories</h3>
+                <ul>
+                    <li><a href="#menu">Burgers</a></li>
+                    <li><a href="#kfc-chicken">Crispy Chicken</a></li>
+                    <li><a href="#menu">Pizza</a></li>
+                    <li><a href="#menu">Hot Dogs</a></li>
+                    <li><a href="#drinks">Drinks & Shakes</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get exclusive discount vouchers and special offers.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ERGASHEVAS FOODS. All Rights Reserved. Designed with luxury in Andijan, Uzbekistan.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="./food.js"></script>
+</body>
+</html>
